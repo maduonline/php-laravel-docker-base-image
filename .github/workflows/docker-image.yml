@@ -30,7 +30,7 @@ jobs:
           context: .
           file: dockerfile-php-nginx
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: latest
           labels: ${{ steps.meta.outputs.labels }}
           
   push_php_only_to_registry:
@@ -58,5 +58,5 @@ jobs:
           context: .
           file: dockerfile-php-only
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: latest
           labels: ${{ steps.meta.outputs.labels }}
