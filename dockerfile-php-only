@@ -23,7 +23,8 @@ RUN apt-get update && apt-get install -y \
     git \
     curl \
     lua-zlib-dev \
-    libmemcached-dev
+    libmemcached-dev \
+    mysql-client
 
 # Install supervisor
 RUN apt-get install -y supervisor
